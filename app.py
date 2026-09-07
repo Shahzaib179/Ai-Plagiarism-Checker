@@ -8,7 +8,7 @@ st.caption("Analyze text for plagiarism indicators, grammar issues, humanization
 
 with st.sidebar:
     st.header("Settings")
-    model = st.text_input("Groq model", value="llama-3.3-70b-versatile")
+    model = st.text_input("Groq model", value="openai/gpt-oss-120b")
     max_sources = st.slider("Maximum web sources", 1, 8, 5)
     st.info("Set GROQ_API_KEY in .env before running the app.")
 
